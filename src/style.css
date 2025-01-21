@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply font-futura text-[16px] px-14 py-6 border-[#D2D2D2] border-solid border-2 hover:ring-1 ring-gray-300 transition duration-200 ease-in-out disabled:opacity-75 hover:bg-black hover:text-white;
+  }
+
+  .btn-secondary {
+    @apply font-futura text-[16px] text-white bg-black px-14 py-6 border-[#D2D2D2] border-solid border-2 hover:ring-2 ring-gray-300 transition duration-200 ease-in-out disabled:opacity-10 hover:bg-white hover:text-black;
+  }
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/futura-std-4-cufonfonts/FuturaStdHeavy.otf');
+  font-weight: 600;
+  font-style: 'normal';
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/futura-std-4-cufonfonts/FuturaStdBook.otf');
+  font-weight: 300;
+  font-style: 'normal';
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-ExtraBold.ttf');
+  font-weight: 600;
+  font-style: 'normal';
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-Light.ttf');
+  font-weight: 300;
+  font-style: 'normal';
+}
+
+@font-face {
+  font-family: 'brandon-grotesque';
+  src: url('/fonts/brandon-grotesque/Brandon_Grotesque_regular.otf');
+  font-weight: 300;
+  font-style: 'normal';
+}
+
+
+body {
+  max-width: 1800px;
+  margin: 0 auto !important;
+  float: none !important;
+  font-family: 'montserrat', sans-serif !important;
+}
+
+.font-title {
+  font-family: 'brandon-grotesque', sans-serif;
+}
